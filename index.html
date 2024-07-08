@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <form name="form">
+            <input type="text" placeholder="  0" name="text" id="text" autocomplete="off" autofocus>
+            <br>
+            <input type="button" value="1" name="btn" onclick="form.text.value+='1'">
+            <input type="button" value="2" name="btn" onclick="form.text.value+='2'">
+            <input type="button" value="3" name="btn" onclick="form.text.value+='3'">
+            <input type="button" value="+" name="btn" onclick="add()">
+            <br>
+            <input type="button" value="4" name="btn" onclick="form.text.value+='4'">
+            <input type="button" value="5" name="btn" onclick="form.text.value+='5'">
+            <input type="button" value="6" name="btn" onclick="form.text.value+='6'">
+            <input type="button" value="-" name="btn" onclick="sub()">
+            <br>
+            <input type="button" value="7" name="btn" onclick="form.text.value+='7'">
+            <input type="button" value="8" name="btn" onclick="form.text.value+='8'">
+            <input type="button" value="9" name="btn" onclick="form.text.value+='9'">
+            <input type="button" value="×" name="btn" onclick="multiply()">
+            <br>
+            <input type="button" value="C" name="btn" onclick="form.text.value=''">
+            <input type="button" value="0" name="btn" onclick="form.text.value+='0'">
+            <input type="button" value="=" name="btn" onclick="form.text.value=eval(form.text.value)">
+            <input type="button" value="÷" name="btn" onclick="divide()">
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
